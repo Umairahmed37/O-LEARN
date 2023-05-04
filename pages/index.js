@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
-
+import Head from 'next/head'
 import { PlayIcon, UserIcon, ChevronDownIcon } from '@heroicons/react/24/solid'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -18,6 +18,10 @@ export default function Home() {
   return (
     <>
       <div className="lg:px-28">
+
+        <Head>
+          <title>O-Learn</title>
+        </Head>
 
 
         <section id="Hero Section container " className="container mx-auto">
