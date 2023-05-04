@@ -213,7 +213,7 @@ export default function Home() {
 
                 {/* 1 */}
                 <SwiperSlide className='rounded-3xl    '>
-
+ 
                   <div className="bg-pink-back mx-8 md:mx-0 p-3  md:p-1 md:pb-3 mt-5 rounded-xl lg:w-full">
                     <Image width={500} height={350} alt="Web Design Course" src='/latestc1.png' />
                     <div className="px-2">

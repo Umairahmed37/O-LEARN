@@ -27,13 +27,19 @@ function Login() {
           </div>
 
           <div>
-            <p className='font-semibold opacity-80 text-2xl'>Login to start Learning</p>
+            <p className='font-semibold opacity-80 text-2xl'>Create your Account</p>
           </div>
 
           <form className='flex flex-col justify-center items-center gap-y-3' >
-            <input class=" appearance-none border-2 border-gray-200 rounded w-full py-2 px-12 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500" id="inline-password" type="email" placeholder="Email" />
+            <input  class=" appearance-none border-2 border-gray-200 rounded w-full py-2 px-12 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500" id="inline-password" type="email" placeholder="Full Name" />
+
+            <input class=" appearance-none border-2 border-gray-200 rounded w-full py-2 px-12 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500" id="inline-password" type="email" placeholder="Email Address" />
+
+
             <input class=" appearance-none border-2 border-gray-200 rounded w-full py-2 px-12 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500" id="inline-password" type="password" placeholder="Password" />
           </form>
+
+
           <div className='flex justify-start items-center gap-x-2'>
             <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
             <p className='opacity-60'>I agree with terms and policies</p>
@@ -42,7 +48,8 @@ function Login() {
           <button type="button" class="text-white bg-blue-300 hover:bg-blue-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-400 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Register</button>
 
           <div className='opacity-60'>
-            <p>Dont have an account <span className='text-blue-400 underline'><Link href='/Register'>Register</Link></span></p>
+
+            <p>Have an account   <span className='text-blue-400 underline'>   <Link href='/Login'>Login</Link></span></p>
           </div>
 
         </div>

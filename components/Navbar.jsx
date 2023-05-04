@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react'
 
 
 function Navbar() {
- 
+
 
   const [navtheme, setNavtheme] = useState(true)
 
@@ -79,26 +79,32 @@ ${!navtheme && ' bg-pink-back shadow-lg'}
     xl:space-x-9 xl:text-lg xl:tracking-wide 
     
     '>
+            <Link href='/'><a className='align-center items-center duration-300 text-black hover:text-[#FD6060] hover-underline-animation'>Home</a></Link>
             <Link href='/'><a className='align-center items-center duration-300 !text-[#FD6060] hover:text-[#FD6060]hover-underline-animation'>Become a Teacher</a></Link>
-            <Link href='/#aboutus'><a className='align-center items-center duration-300 text-black hover:text-[#FD6060] hover-underline-animation'>Courses</a></Link>
+            <Link href='/Courses'><a className='align-center items-center duration-300 text-black hover:text-[#FD6060] hover-underline-animation'>Courses</a></Link>
             <Link href='/#services'><a className='align-center items-center duration-300 text-black hover:text-[#FD6060] hover-underline-animation'>Free Courses</a></Link>
             <Link href='/#features'><a className='align-center items-center duration-300 text-black hover:text-[#FD6060] hover-underline-animation'>Paid Courses</a></Link>
-            
-            
+            <Link href='/Register'><a className='align-center items-center duration-300 text-black hover:text-[#FD6060] hover-underline-animation'>Sign Up</a></Link>
+
+
 
 
             <div className='md:self-center '>
-              
 
-                <button className='  
+              <Link
+                href="/Login"
+              >
+                <button
+                  className='  
           px-4 py-2 text-black duration-300 border-2 border-black
           hover:bg-black hover:text-white 
           
           md:align-middle md:rounded-3xl
           
-          '>   Ahmad
+          '> Login
                 </button>
-              
+              </Link>
+
 
 
 
@@ -117,10 +123,10 @@ ${!navtheme && ' bg-pink-back shadow-lg'}
               <li onClick={uncheck}><a href='#aboutus'>Courses</a></li>
               <li onClick={uncheck}><a href='#services'>Free Courses</a></li>
               <li onClick={uncheck}><a href='#features'>Paid Courses</a></li>
-               
 
 
-              
+
+
             </ul>
           </label>
 
